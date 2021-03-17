@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shibui</title>
+<link href="css/framework7.bundle.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	
+	<section id="app">
+		<section class="panel panel-left panel-cover">
+		 <div class="bg-menu">
+		 <img src="img/perfil.jpeg" class="img-fluid radius">
+		 </div>
+		
+			<div class="list list-menu">
+			<ul>
+				<li>
+					<a href="/Perfil/" class="item-link item-content panel-close">
+						<div class="item-inner">
+							My account
+						</div>
+
+					</a>
+				</li>
+				<li class="listilla">
+				<a href="/home/" class="item-link item-content  panel-close">
+					<div class="item-inner">
+						Settings
+					</div>
+					</a>
+				</li>
+				<li class="log-out">
+					<a href="/home/" class="item-link item-content  panel-close">
+						<div class="item-inner">
+						Log Out
+						</div>
+
+					</a>
+				</li>
+				
+				
+			</ul>
+
+		</div>
+     	
+     </section>
+		
+     
+     
+     <section class="panel panel-right panel-cover">
+     	<h2 class="block-title">Menú Lateral</h2>
+     </section>
+     
+     <section class="panel panel-left panel-cover">
+     	<h2 class="block-title">Menú Lateral izquierdo</h2>
+     </section>
+     
+     
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main view-init">
+        <!-- Initial Page, "data-name" contains page name -->
+        <section data-name="home" class="page">
+
+          <!-- Top Navbar -->
+          <nav class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+             	<div class="left">
+             		<a href="#" class="link panel-open" data-panel=".panel-left">
+             			<span class="material-icons">menu</span>
+             		</a>
+             	</div>
+              	<div class="right">
+				<a href="#">
+				<div class="title logo" data-panel=".panel-right"><img src="img/logo.png"></div>	
+					</a>
+				</div>
+            </div>
+          </nav>
+
+
+          <!-- Scrollable page content -->
+          <article class="page-content">
+				<div class="block">
+			<div class="card-content card-content-padding">
+				<h2>Welcome, Fernando</h2>
+					</div>
+					
+        			<div class="row categoria-enlace">
+        				<article class="col padding">
+        					<h3 class="block-title no-margin titulo">Featured products</h3>
+        				</article>
+					</div>
+        			<div class="block">
+        			
+        			<article class="card top">
+        				<div class="card-content card-content-padding">
+        					<div class="row">
+								<article class="col-50">
+        							<img src="img/purse.jpeg" class="img-fluid">
+        						</article>
+        						<article class="col-50">
+        							<h3>Black leather purse</h3>
+									<h6 class="sub-text">Purse made completely of leather.</h6>
+        							<span class="precio">$50</span>
+									<h5>No shipment included</h5>
+									<div class="row">
+									<article class="col-30">
+										<a href="#" class="tab-link">
+									<i class="material-icons">favorite_border</i>
+									</a>
+									</article>
+									<article class="col-30">
+										<a href="#" class="tab-link">
+									<i class="material-icons">shopping_cart</i>
+									</a>
+									</article>
+									<article class="col-30">
+										<a href="#" class="tab-link">
+									<i class="material-icons">upload</i>
+									</a>
+									
+									</article>
+								
+									</div>
+						</article>
+				<div class="row categoria-enlace">
+        				<article class="col">
+        					<h3 class="block-title no-margin">Categories</h3>
+        				</article>
+							<div class="card-content card-content-padding">
+        					<div class="row">
+								<article class="col-50">
+								<div class="card-content"></div>
+								<article class="col-50">
+        							<img src="img/crop.jpeg" class="img-fluid">
+									<h4 class="precios">Crop Top</h4>
+									<div class="row">
+										<article class="col-50">
+									<p class="precios">50$</p>
+										</article>
+									<article class="col-50">
+										<i class="material-icons">favorite_border</i>
+									</article>
+									</div>
+									
+        						</article>
+        						
+									</article>
+        						<article class="col-50">
+        							<img src="img/jeans.jpeg" class="img-fluid">
+									<h4 class="precios">Jeans</h4>
+									<div class="row">
+										<article class="col-50">
+									<p class="precios">50$</p>
+										</article>
+									<article class="col-50"><i class="material-icons">favorite_border</i></article>
+										</div>
+        						</article>
+								
+        					</div>        					        					
+        				</div>
+							
+        			
+								 
+							
+        				<article class="col text-align-right">
+        					<a href="/productos/" class="link">View All<span class="material-icons">arrow_forward</span></a>
+        				</article>
+        			</div>
+					
+					
+					
+         
+          </article>
+			
+        </section><!--page-->
+		  
+	<div class="toolbar tabbar tabbar-labels toolbar-bottom">
+	  <div class="toolbar-inner">
+		<a href="/home/" class="tab-link ">
+		  <i class="material-icons">home</i>
+		  <span class="tabbar-label">Inicio</span>
+		</a>
+		<a href="/ordenes/" class="tab-link">
+		  <i class="material-icons">local_mall</i>
+		  <span class="tabbar-label">Ordenes</span>
+		</a>
+		  <a href="/productos/" class="tab-link">
+		  <i class="material-icons">games</i>
+		  <span class="tabbar-label">Productos</span>
+		</a>
+		  <a href="/Perfil/" class="tab-link">
+		  <i class="material-icons">person</i>
+		  <span class="tabbar-label">Perfil</span>
+		</a>
+	  </div>
+	</div>
+		  
+
+      </div><!--view-->
+		
+    </section>
+	
+	<section id="login">
+		<div class="login-screen modal-in modal-login">
+		  <!-- Default view-page layout -->
+		  <div class="view">
+			<div class="page login-screen-page">
+			  <!-- page-content has additional login-screen content -->
+			  <div class="page-content login-screen-content">
+				<div class="login-screen-title"><img src="img/logo.png"></div>
+				<!-- Login form -->
+				<form>
+				  <div class="list">
+					<ul>
+					  <li class="item-content item-input">
+						<div class="item-inner">
+						  <div class="item-title item-label">Username</div>
+						  <div class="item-input-wrap">
+							<input type="text" id="user" name="Username" placeholder="Username">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					  <li class="item-content item-input">
+						<div class="item-inner">
+						  <div class="item-title item-label">Password</div>
+						  <div class="item-input-wrap">
+							<input type="password" id="password" name="password" placeholder="Password">
+							<span class="input-clear-button"></span>
+						  </div>
+						</div>
+					  </li>
+					</ul>
+				  </div>
+				  <div class="list block">
+					<ul>
+					  <li>
+						<a href="/index/" id="btnLogin" class="button button-fill">Log In</a>
+					  </li>
+					</ul>
+					<div class="block-footer">Don't have an account yet?, <a href="/register/" id="btnLogin2" class="popup-open" data-popup=".popup-registro">Register</a>!
+					  </div>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>	
+			
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/my-app.js"></script>
+	
+</body>
+</html>
