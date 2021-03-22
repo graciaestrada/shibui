@@ -32,7 +32,36 @@ var app = new Framework7({
     	url: 'Perfil.html',
     	name: 'Perfil',
   		},
-		
+		{
+		path: '/products/',
+    	url: 'products.html',
+    	name: 'products',
+  		},
+		{
+		path: '/cart/',
+    	url: 'cart.html',
+    	name: 'cart',
+  		},
+		{
+		path: '/addtocartboots/',
+    	url: "addtocartboots.html",
+    	name: 'addtocartboots',
+  		},
+		{
+		path: '/addtocartcrop/',
+    	url: "addtocartcrop.html",
+    	name: 'addtocartcrop',
+  		},
+		{
+		path: '/addtocartskirts/',
+    	url: "addtocartskirts.html",
+    	name: 'addtocartskirts',
+  		},
+		{
+		path: '/addtocartjeans/',
+    	url: "addtocartjeans.html",
+    	name: 'addtocartjeans',
+  		},
 	]
 });
 
@@ -40,12 +69,12 @@ var app = new Framework7({
 var $$ = Dom7;
 
 $$('#btnComprar').on('click', function () {
-  app.dialog.alert('!Tu compra fue realizada correctamente!');
+  app.dialog.alert('!Your Order was placed!!');
 });
 
 $$('#btnConfirmar').on('click', function () {
   app.dialog.confirm('¿Desea procesar su compra?', function () {
-    app.dialog.alert('!Tu compra fue realizada correctamente!');
+    app.dialog.alert('!Your order was completed successfully!');
   });
 });
 $$('#btnLogin2').on('click', function () {
@@ -60,7 +89,7 @@ $$('#btnLogin').on('click', function () {
 		app.loginScreen.close(".modal-login");
 		
 	}else{
-		app.dialog.alert('Lo sentimos, sus datos son incorrectos');
+		app.dialog.alert('We are sorry, your data is incorrect');
 	}
 	
 	
